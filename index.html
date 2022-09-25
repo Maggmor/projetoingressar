@@ -7,17 +7,22 @@
 
   <meta name="description" content="Site com os melhores preços de eventos de todo o país.">
 
+  <link rel="icon" href="./img/favicon.ico" type="image/icon+xml">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
   <header class="header-bg">
     <div class="header container">
-      <a href="./"><img src="./img/logo.svg" alt="Ingressar"></a>
+      <a href="./index.html"><img src="./img/logo.svg" width="196" height="35" alt="Ingressar"></a>
 
       <nav area-label="primaria" class="home" id="home" aria-label="Home">
         <ul class="header-menu font-1-m cor-0">
@@ -31,38 +36,38 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Ingressos para os melhores shows do Brasil<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Aqui você encontrará os melhores eventos com preços que cabem no seu bolso, podendo comprar sem sair de casa.</p>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Ingressos para os melhores shows do Brasil<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Aqui você encontrará os melhores eventos com preços que cabem no seu bolso, podendo comprar sem sair de casa.</p>
       </div>
-      <div>
-        <img src="./img/introducao5.jpg" alt="Foto publico em um show">
-      </div>
+      <picture class="fadeInDown" data-anime="600">
+        <img src="./img/introducao5.jpg" width="1280" height="1600" alt="Foto publico em um show">
+      </picture>
     </div>
   </main>
 
   <section class="eventos" id="eventos" aria-label="Eventos">
     <article class="shows-lista">
-      <h2 class="container font-1-xxl">Próximos eventos<span class="cor-p1">.</span></h2>
+      <h2 class="container font-1-xxl fadeInLeft" data-anime="800">Próximos eventos<span class="cor-p1">.</span></h2>
 
       <ul>
-        <li>
+        <li data-anime="800">
           <a href="./ingressos/ramones.html">
-            <img src="./img/ramonesshow.jpg" alt="Show ramones">
-            <h3 class="font-1-xl">Ramones</h3>
+            <img src="./img/ramonesshow.jpg" width="1280" height="720" alt="Show ramones">
+            <h3 class="font-1-xl fadeInDown" data-anime="1700">Ramones</h3>
             <span class="botao">Compre agora</span>
           </a>
         </li>
-        <li>
+        <li data-anime="800">
           <a href="./ingressos/maiden.html">
-            <img src="./img/maidenshow.jpg" alt="Show maiden">
-            <h3 class="font-1-xl">Iron Maiden</h3>
+            <img src="./img/maidenshow.jpg" width="1280" height="720" alt="Show maiden">
+            <h3 class="font-1-xl fadeInDown" data-anime="1700">Iron Maiden</h3>
             <span class="botao">Compre agora</span>
           </a>
         </li>
-        <li>
+        <li data-anime="800">
           <a href="./ingressos/raul.html">
-            <img src="./img/raulshow.jpg" alt="Show raul">
-            <h3 class="font-1-xl">Raul Seixas</h3>
+            <img src="./img/raulshow.jpg" width="1280" height="720" alt="Show raul">
+            <h3 class="font-1-xl fadeInDown" data-anime="1700">Raul Seixas</h3>
             <span class="botao">Compre agora</span>
           </a>
         </li>
@@ -70,10 +75,10 @@
     </article>
   </section>
 
-  <section class="contato" id="contato" aria-label="Contato">>
+  <section class="contato" id="contato" aria-label="Contato">
     <footer class="footer-bg">
       <div class="footer container">
-        <img src="./img/logo.svg" alt="Ingressar">
+        <img src="./img/logo.svg" width="196" height="35" alt="Ingressar">
         <div class="footer-contato">
           <h3 class="font-2-l-b cor-0">Contato</h3>
           <ul class="font-2-m cor-5">
@@ -84,13 +89,13 @@
           </ul>
           <div class="footer-redes">
             <a href="./">
-              <img src="./img/redes/instagram.svg" alt="Instagram">
+              <img src="./img/redes/instagram-p.svg" width="32" height="32" alt="Instagram">
             </a>
             <a href="./">
-              <img src="./img/redes/facebook.svg" alt="Facebook">
+              <img src="./img/redes/facebook-p.svg" width="32" height="32" alt="Facebook">
             </a>
             <a href="https://www.youtube.com/watch?v=vxgTpbKUANQ" target="_blank" rel="Maiden música">
-              <img src="./img/redes/youtube.svg" alt="youtube">
+              <img src="./img/redes/youtube-p.svg" width="32" height="32" alt="youtube">
             </a>
           </div>
         </div>
@@ -98,6 +103,9 @@
       </div>
     </footer>
   </section>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
