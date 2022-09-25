@@ -18,7 +18,7 @@ function enviarFormulario(event) {
 
   const data = new FormData(formulario);
 
-  fetch("./enviar.php", {
+  fetch("../enviar.php", {
     method: "POST",
     body: data,
   }).then(formularioEnviado);
