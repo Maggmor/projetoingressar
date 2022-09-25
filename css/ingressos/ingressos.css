@@ -1,3 +1,16 @@
+.imgraul:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+.imgmaiden:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+.imgramones:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
 #orcamento {
   background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
 }
