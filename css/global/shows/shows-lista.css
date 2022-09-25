@@ -1,0 +1,71 @@
+.shows-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.shows-lista h2 {
+  margin-bottom: 40px;
+}
+
+.shows-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 30px 30px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.shows-lista li {
+  min-width: 280px;
+  flex: 1;
+}
+
+.shows-lista a {
+  display: block;
+}
+
+.shows-lista img {
+  margin-bottom: 16px;
+}
+
+.shows-lista h3 {
+  margin-bottom: 30px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.shows-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  background-color: var(--cor-p1);
+  transition: width 0.3s;
+}
+
+.shows-lista a:hover h3::before {
+  width: 24px;
+}
+
+.shows-lista .botao {
+  display: block;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 800px) {
+  .shows-lista {
+    padding-bottom: 60px;
+  }
+  .shows-lista ul {
+    gap: 20px;
+  }
+}
