@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ingressos | Raul</title>
-  <meta name="description" content="compre Agora.">
+  <meta name="description" content="Compre Agora.">
 
   <link rel="icon" href="./img/favicon.ico" type="image/icon+xml">
   <link rel="preload" href="../css/style.css" as="style">
@@ -19,7 +19,7 @@
   <script>document.documentElement.classList.add('js');</script>
 </head>
 
-<body id="raul">
+<body id="ingressos">
   <header class="header-bg">
     <div class="header container">
       <a href="../index.html"><img src="../img/logo.svg" width="196" height="35" alt="Ingressar"></a>
@@ -42,41 +42,45 @@
     </div>
 
     <section class="contato-fomulario" aria-label="Formulário">
-      <form class="orcamento container" action="../enviar.php" method="post">
-        <div class="orcamento-produto">
-          <h2 class="font-1-xs cor-5">Estudante ou Normal?</h2>
+      <form class="ingressos container" action="../enviar.php" method="post">
+        <div class="ingresso-produto">
+          <h2 class="font-1-m-b cor-5">Normal ou Estudante?</h2>
 
-          <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
-          <label for="bikcraft">Estudante</label>
+          <input type="radio" name="tipo" value="normal" id="normal">
+          <label for="normal">Normal</label>
 
-          <input type="radio" name="tipo" value="seguro" id="seguro">
-          <label for="seguro">Normal</label>
+          <input type="radio" name="tipo" value="estudante" id="estudante">
+          <label for="estudante">Estudante</label>
 
-          <div class="orcamento-conteudo" id="orcamento-bikcraft">
-            <h2 class="font-1-xs cor-5">Setores - Raul</h2>
+          <div class="ingressos-conteudo" id="ingresso-normal">
+            <h2 class="font-1-m-b cor-5">Setor Raul Seixas</h2>
 
-            <input type="radio" name="produto" value="magic" id="magic">
-            <label for="magic">Pista<span>R$ 100</span></label>
+            <input type="radio" name="produto" value="pista premium normal raul" id="pista premium normal raul">
+            <label for="pista premium normal raul">Pista Premium<span>R$ 1000</span></label>
 
+            <input type="radio" name="produto" value="pista normal raul" id="pista normal raul">
+            <label for="pista normal raul">Pista<span>R$ 600</span></label>
 
-            <input type="radio" name="produto" value="nebula" id="nebula">
-            <label for="nebula">Arquibancada<span>R$ 50</span></label>
-
-
+            <input type="radio" name="produto" value="cadeira coberta raul" id="cadeira coberta raul">
+            <label for="cadeira coberta raul">Cadeira coberta<span>R$ 300</span></label>
           </div>
 
-          <div class="orcamento-conteudo" id="orcamento-seguro">
-            <h2 class="font-1-xs cor-5">Setores - Raul</h2>
+          <div class="ingressos-conteudo" id="ingresso-estudante">
+            <h2 class="font-1-m-b cor-5">Setor Raul Seixas</h2>
 
-            <input type="radio" name="produto" value="prata" id="prata">
-            <label for="prata">Pista<span>R$ 200</span></label>
+            <input type="radio" name="produto" value="premium estudante raul" id="premium estudante raul">
+            <label for="premium estudante raul">Pista Premium<span>R$ 500</span></label>
 
-            <input type="radio" name="produto" value="ouro" id="ouro">
-            <label for="ouro">Arquibancada<span>R$ 100</span></label>
+            <input type="radio" name="produto" value="pista estudante raul" id="pista estudante raul">
+            <label for="pista estudante raul">Pista<span>R$ 300</span></label>
+
+            <input type="radio" name="produto" value="cadeira estudante raul" id="cadeira estudante raul">
+            <label for="cadeira estudante raul">Cadeira coberta<span>R$ 150</span></label>
           </div>
+
         </div>
-        <div class="orcamento-dados form fadeInRight" data-anime="1000">
-          <h2 class=" font-1-xs cor-9 col-2">dados pessoais</h2>
+        <div class="ingressos-dados form fadeInRight" data-anime="1000"">
+        <h2 class=" font-1-xs cor-9 col-2">Dados pessoais</h2>
           <div>
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>
@@ -134,7 +138,6 @@
     </section>
   </main>
 
-
   <section class="contato" id="contato" aria-label="Contato">
     <footer class="footer-bg">
       <div class="footer container">
@@ -148,13 +151,13 @@
             <li>Salto - SP</li>
           </ul>
           <div class="footer-redes">
-            <a href="./raul.html">
+            <a href="./ramones.html">
               <img src="../img/redes/instagram.svg" width="32" height="32" alt="Instagram">
             </a>
-            <a href="./raul.html">
+            <a href="./ramones.html">
               <img src="../img/redes/facebook.svg" width="32" height="32" alt="Facebook">
             </a>
-            <a href="https://www.youtube.com/watch?v=CmB4sfoZkwo" target="_blank" rel="Raul Música">
+            <a href="https://www.youtube.com/watch?v=CmB4sfoZkwo" target="_blank" rel="Ramones Música">
               <img src="../img/redes/youtube.svg" width="32" height="32" alt="youtube">
             </a>
           </div>
