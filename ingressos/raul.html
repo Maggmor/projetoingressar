@@ -35,9 +35,9 @@
   </header>
 
   <main>
-    <div class="titulo-bg fadeInUp" data-anime="400">
+    <div class="titulo-bg fadeInUp" data-anime="650">
       <div class="titulo container">
-        <p class="paraingresso font-2-l-b cor-5">Ingressos : <span class="cor-p1">Raul Seixas</span></p>
+        <p class="paraingresso font-2-l-b cor-5">Ingressos : <span class="cor-p1">Raul Seixas</span><span class="dataevento">16/10/2022</span></p>
       </div>
     </div>
 
@@ -46,35 +46,35 @@
         <div class="ingresso-produto">
           <h2 class="font-1-m-b cor-5">Normal ou Estudante?</h2>
 
-          <input type="radio" name="tipo" value="normal" id="normal">
+          <input type="radio" name="tipo" value="normal" id="normal" required>
           <label for="normal">Normal</label>
 
-          <input type="radio" name="tipo" value="estudante" id="estudante">
+          <input type="radio" name="tipo" value="estudante" id="estudante" required>
           <label for="estudante">Estudante</label>
 
-          <div class="ingressos-conteudo" id="ingresso-normal">
+          <div class="ingressos-conteudo" id="ingresso-normal" required>
             <h2 class="font-1-m-b cor-5">Setor Raul Seixas</h2>
 
-            <input type="radio" name="produto" value="pista premium normal raul" id="pista premium normal raul">
+            <input type="radio" name="produto" value="pista premium normal raul" id="pista premium normal raul" required>
             <label for="pista premium normal raul">Pista Premium<span>R$ 1000</span></label>
 
-            <input type="radio" name="produto" value="pista normal raul" id="pista normal raul">
+            <input type="radio" name="produto" value="pista normal raul" id="pista normal raul" required>
             <label for="pista normal raul">Pista<span>R$ 600</span></label>
 
-            <input type="radio" name="produto" value="cadeira coberta raul" id="cadeira coberta raul">
+            <input type="radio" name="produto" value="cadeira coberta raul" id="cadeira coberta raul" required>
             <label for="cadeira coberta raul">Cadeira coberta<span>R$ 300</span></label>
           </div>
 
-          <div class="ingressos-conteudo" id="ingresso-estudante">
+          <div class="ingressos-conteudo" id="ingresso-estudante" required>
             <h2 class="font-1-m-b cor-5">Setor Raul Seixas</h2>
 
-            <input type="radio" name="produto" value="premium estudante raul" id="premium estudante raul">
+            <input type="radio" name="produto" value="premium estudante raul" id="premium estudante raul" required>
             <label for="premium estudante raul">Pista Premium<span>R$ 500</span></label>
 
-            <input type="radio" name="produto" value="pista estudante raul" id="pista estudante raul">
+            <input type="radio" name="produto" value="pista estudante raul" id="pista estudante raul" required>
             <label for="pista estudante raul">Pista<span>R$ 300</span></label>
 
-            <input type="radio" name="produto" value="cadeira estudante raul" id="cadeira estudante raul">
+            <input type="radio" name="produto" value="cadeira estudante raul" id="cadeira estudante raul" required>
             <label for="cadeira estudante raul">Cadeira coberta<span>R$ 150</span></label>
           </div>
 
@@ -91,46 +91,46 @@
           </div>
           <div class="col-2">
             <label for="cpf">CPF</label>
-            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
           </div>
           <div class="col-2">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="email@exemplo.com.br" maxlength="50" required>
           </div>
 
           <h2 class="font-1-xs cor-9 col-2">Forma de Pagamento</h2>
           <div class="col-2">
-            <label for="numero cartao">Cartão de Crédito</label>
-            <input type="text" id="numero cartao" name="numero cartao">
+            <label for="numero cartao">Cartão de Crédito (Fictício)</label>
+            <input type="text" id="numero cartao" name="numero cartao" placeholder="0000" maxlength="4">
           </div>
           <h2 class="font-1-xs cor-9 col-2">Quantidade de Ingressos</h2>
-          <label for="quantidade de ingressos">Max 3 por pessoa</label>
-          <input type="number" min="1" max="3" id="quantidade de ingressos" name="quantidade de ingressos" required>
+          <label for="quantidade de ingressos">Máximo de 1 ingresso por pessoa</label>
+          <input type="number" min="1" max="1" id="quantidade de ingressos" name="quantidade de ingressos" required>
 
           <h2 class="font-1-xs cor-9 col-2">Entrega</h2>
           <div>
             <label for="cep">CEP</label>
-            <input type="text" id="cep" name="cep">
+            <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9">
           </div>
           <div>
             <label for="numero">Número</label>
-            <input type="text" id="numero" name="numero">
+            <input type="text" id="numero" name="numero" maxlength="8">
           </div>
           <div>
             <label for="logradouro">Logradouro</label>
-            <input type="text" id="logradouro" name="logradouro">
+            <input type="text" id="logradouro" name="logradouro" maxlength="35">
           </div>
           <div>
             <label for="bairro">Bairro</label>
-            <input type="text" id="bairro" name="bairro">
+            <input type="text" id="bairro" name="bairro" maxlength="35">
           </div>
           <div>
             <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade" required>
+            <input type="text" id="cidade" name="cidade" maxlength="35" required>
           </div>
           <div>
             <label for="estado">Estado</label>
-            <input type="text" id="estado" name="estado">
+            <input type="text" id="estado" name="estado" maxlength="35">
           </div>
           <button class="botao col-2">Comprar Agora</button>
         </div>
