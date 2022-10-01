@@ -1,3 +1,8 @@
+.dataevento {
+  padding-left: 40px;
+  color: var(--cor-0);
+}
+
 .imgraul:hover {
   opacity: 0.8;
   transition: 1s;
@@ -190,7 +195,14 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .dataevento {
+    display: block;
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
   .ingresso-produto {
     grid-template-columns: 1fr;
   }
